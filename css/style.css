@@ -1,0 +1,286 @@
+#wrap > #home > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 8vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 5px #ccc;
+          box-shadow: 1px 1px 5px #ccc;
+}
+
+#wrap > #home > nav > .logo h1 > img {
+  width: 70px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+#wrap > #home > nav > .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+}
+
+#wrap > #home > nav > .nav-links > li > a {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+#wrap > #home > nav > .burger {
+  display: none;
+}
+
+#wrap > #home > nav > .burger > div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #ccc;
+}
+
+#wrap > #home > .well {
+  margin: 300px 0 0 30px;
+  padding-bottom: 150px;
+}
+
+#wrap > #home > .well > p {
+  font-weight: 700;
+  font-size: 100px;
+}
+
+#wrap > #home > .well > p:nth-child(2) {
+  text-indent: 250px;
+}
+
+#wrap > #home > .well > span {
+  display: block;
+  width: 900px;
+  height: 35px;
+  margin: -40px 0 0 270px;
+  background-color: #ffd736;
+}
+
+#wrap #about {
+  width: 100%;
+}
+
+#wrap #about > h1 {
+  font-size: 90px;
+}
+
+#wrap #about > .profiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 100px;
+}
+
+#wrap #about > .profiles > .profile-img > li > img {
+  width: 400px;
+  height: 400px;
+}
+
+#wrap #about > .profiles > .profile-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 80px;
+}
+
+#wrap #about > .profiles > .profile-text > li {
+  margin: 30px;
+  font-size: 30px;
+}
+
+#wrap #about > .profiles > .profile-text > li > .line {
+  display: block;
+  width: 1px;
+  height: 350px;
+  background-color: #000;
+}
+
+#wrap #about > .profiles > .profile-text > li > .tit {
+  display: block;
+  font-weight: 500;
+}
+
+#wrap #about > .skills {
+  width: 100%;
+  margin: 200px auto;
+}
+
+#wrap #about > .skills > h1 {
+  font-size: 90px;
+}
+
+#wrap #about > .skills > .design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 150px 0 0 125px;
+}
+
+#wrap #about > .skills > .design > .skills-text {
+  width: 33%;
+  margin: 50px 50px 0 0;
+  font-size: 24px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+#wrap #about > .skills > .design > .skills-img > img {
+  width: 250px;
+  height: 250px;
+}
+
+#wrap #about > .skills > .html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 0 0 635px;
+}
+
+#wrap #about > .skills > .html > .skills-text {
+  margin-left: 30px;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#wrap #about > .skills > .html > .skills-img > img {
+  width: 250px;
+  height: 250px;
+}
+
+#wrap #about > .skills > .javascript {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 0 0 70px;
+}
+
+#wrap #about > .skills > .javascript > .skills-text {
+  margin: 80px 50px 0 0;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#wrap #about > .skills > .javascript > .skills-img > img {
+  width: 250px;
+  height: 250px;
+}
+
+#wrap > #portfolio > h1 {
+  font-size: 90px;
+}
+
+@media screen and (max-width: 1024px) {
+  #wrap > #home > nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+  }
+  #wrap > #home > nav > .logo {
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+  #wrap > #home > nav > .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 50%;
+  }
+  #wrap > #home > nav > .nav-links > li > a {
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  #wrap > #home > nav > .burger {
+    display: none;
+    cursor: pointer;
+  }
+  #wrap > #home > nav > .burger > div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #ccc;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  #wrap > #home > nav > .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #000;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  #wrap > #home > nav > .nav-links > li > a {
+    color: #fff;
+    font-size: 30px;
+  }
+  #wrap > #home > nav > .burger {
+    display: block;
+  }
+  #wrap > #home > nav > .burger > .toggle .line1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  #wrap > #home > nav > .burger > .toggle.line2 {
+    opacity: 0;
+  }
+  #wrap > #home > nav > .burger > .toggle.line3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+            transform: rotate(45deg) translate(-5px, -6px);
+  }
+  #wrap > #home > nav > .nav-links.active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
