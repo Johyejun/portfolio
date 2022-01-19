@@ -1,5 +1,5 @@
 @charset "UTF-8";
-#wrap {
+#fullpage {
   > #home {
     > nav {
       display: flex;
@@ -51,22 +51,24 @@
       padding-bottom: 150px;
       > p {
         font-weight: 700;
-        font-size: 100px;
+        font-size: 130px;
         &:nth-child(2) {
           text-indent: 250px;
         }
       }
       > span {
         display: block;
-        width: 900px;
-        height: 35px;
-        margin: -40px 0 0 270px;
+        width: 65vw;
+        height: 4vh;
+        margin: -50px 0 0 250px;
         background-color: #ffd736;
+        transition: all 0.3s ease-in-out;
       }
     }
   }
   #about {
     width: 100%;
+
     > h1 {
       font-size: 90px;
     }
@@ -163,10 +165,200 @@
     > h1 {
       font-size: 90px;
     }
+    > .portfolio-1 {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+      > .myportfolio {
+        > li {
+          font-size: 26px;
+          &:nth-child(5) {
+            margin-bottom: 20px;
+          }
+        }
+        > .number {
+          color: rgb(233, 232, 232);
+          font-size: 150px;
+          font-weight: 900;
+        }
+        > .website-type {
+          font-size: 45px;
+          font-family: 'Poppins', sans-serif;
+        }
+        > .work {
+          margin-bottom: 20px;
+          font-weight: 400;
+          font-size: 34px;
+        }
+        > .btn {
+          > a {
+            display: block;
+            width: 150px;
+            height: 70px;
+            margin-top: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 65px;
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 50px;
+            &:hover {
+              transition: all 0.5s;
+              color: #fff;
+              background-color: #000;
+            }
+          }
+        }
+      }
+      > .port_1_img {
+        li {
+          margin-top: 100px;
+          > img {
+            width: 600px;
+          }
+        }
+      }
+    }
+    > .portfolio-2 {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+      > .port_2_img {
+        li {
+          margin-top: 50px;
+          > img {
+            width: 600px;
+          }
+        }
+      }
+      > .hollys {
+        > li {
+          font-size: 26px;
+          &:nth-child(5) {
+            margin-bottom: 20px;
+          }
+        }
+        > .number {
+          color: rgb(233, 232, 232);
+          font-size: 150px;
+          font-weight: 900;
+        }
+        > .website-type {
+          font-size: 45px;
+          font-family: 'Poppins', sans-serif;
+        }
+        > .work {
+          margin-bottom: 20px;
+          font-weight: 400;
+          font-size: 34px;
+        }
+        > .btn {
+          > a {
+            display: block;
+            width: 150px;
+            height: 70px;
+            margin-top: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 65px;
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 50px;
+            &:hover {
+              transition: all 0.5s;
+              color: #fff;
+              background-color: #000;
+            }
+          }
+        }
+      }
+    }
+    > .portfolio-3 {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+      > .jomalone {
+        > li {
+          font-size: 26px;
+          &:nth-child(5) {
+            margin-bottom: 20px;
+          }
+        }
+        > .number {
+          color: rgb(233, 232, 232);
+          font-size: 150px;
+          font-weight: 900;
+        }
+        > .website-type {
+          font-size: 45px;
+          font-family: 'Poppins', sans-serif;
+        }
+        > .work {
+          margin-bottom: 20px;
+          font-weight: 400;
+          font-size: 34px;
+        }
+        > .btn {
+          > a {
+            display: block;
+            width: 150px;
+            height: 70px;
+            margin-top: 30px;
+            font-weight: 700;
+            line-height: 70px;
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 50px;
+            &:hover {
+              transition: all 0.5s;
+              color: #fff;
+              background-color: #000;
+            }
+          }
+        }
+      }
+      > .port_3_img {
+        li {
+          margin-top: 100px;
+          > img {
+            width: 600px;
+          }
+        }
+      }
+    }
+  }
+  > #contact {
+    background-color: #000;
+    h1 {
+      margin-top: 100px;
+      color: #fff;
+      font-size: 50px;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+
+      > ul {
+        li {
+          color: #fff;
+          font-size: 30px;
+        }
+      }
+      > .kakaotalk {
+        > li {
+          font-size: 16px;
+          margin-right: 30px;
+          > img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 1024px) {
-  #wrap {
+  #fullpage {
     > #home {
       > nav {
         display: flex;
@@ -201,15 +393,34 @@
           }
         }
       }
+      > .well {
+        width: 100%;
+        > p {
+          font-size: 80px;
+          text-indent: 0;
+        }
+      }
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #fullpage {
+    > .home {
+      > .well {
+        margin: 100px 0;
+        > p {
+          //font-size: 80px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
   body {
     overflow-x: hidden;
   }
-  #wrap {
-    > #home {
+  #fullpage {
+    > .home {
       > nav {
         > .nav-links {
           display: flex;
@@ -217,8 +428,8 @@
           position: absolute;
           right: 0;
           height: 92vh;
-          top: 8vh;
-          width: 100%;
+          top: 62px;
+          width: 50%;
           align-items: center;
           background-color: #000;
           transform: translateX(100%);

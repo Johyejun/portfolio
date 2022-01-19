@@ -6,20 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Johyejun portfolio</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./js/jquery.fullPage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jquery.fullPage.js"></script>
+  <script src="./js/function.js"></script>
+
 </head>
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet">
-<script src="./js/jquery.min.js"></script>
-<script src="./js/function.js"></script>
+
+
 
 <body>
-  <div id="wrap">
-    <div id="home">
+  <div id="fullpage">
+    <div class="section" id="home">
       <nav>
         <div class="logo">
           <h1>
@@ -27,10 +34,10 @@
           </h1>
         </div>
         <ul class="nav-links">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">POFTFOLIO</a></li>
-          <li><a href="#">CONTECT</a></li>
+          <li data-menuanchor="section1"><a href="#section2">HOME</a></li>
+          <li data-menuanchor="section2"><a href="#section2">ABOUT</a></li>
+          <li data-menuanchor="section3"><a href="#section3">POFTFOLIO</a></li>
+          <li data-menuanchor="section4"><a href="#section4">CONTACT</a></li>
         </ul>
         <div class="burger">
           <div class="toggle" class="line1"></div>
@@ -40,11 +47,11 @@
       </nav>
       <div class="well">
         <P>WELL COME TO</P>
-        <P>TO MY PORTFOLIO</P>
+        <P>MY PORTFOLIO</P>
         <span></span>
       </div>
     </div>
-    <div id="about">
+    <div class="section" id="about">
       <h1 class="text-center">ABOUT ME</h1>
       <div class="profiles">
         <ul class="profile-img">
@@ -99,23 +106,67 @@
         </ul>
       </div>
     </div>
-    <div id="portfolio">
+    <div class="section" id="portfolio">
       <h1 class="text-center">PORTFOLIO</h1>
-      <div class="portfolio-container">
-        <ul class="port_1">
-          <li>1.</li>
-          <li>Standard Website</li>
-          <li>portfolio 사이트</li>
+      <div class="portfolio-1">
+        <ul class="myportfolio">
+          <li class="number">01</li>
+          <li class="website-type">Standard Website</li>
+          <li class="work">반응형 portfolio 사이트</li>
           <li>기여도</li>
-          <li>디자인 + 퍼블리싱 100%</li>
+          <li>디자인 100% + 퍼블리싱 100%</li>
           <li>사용프로그램</li>
           <li>Photoshop,Illustrator,Visual Studio Code</li>
-          <li><a href="#" target="_blank">view site</a></li>
+          <li class="btn"><a href="#" target="_blank">view site</a></li>
         </ul>
         <ul class="port_1_img">
           <li><img src="./images/imac_portfolio.png" alt="imac_portfolio"></li>
         </ul>
       </div>
+      <div class="portfolio-2">
+        <ul class="port_2_img">
+          <li><img src="./images/hollys_imac.png" alt="hollys"></li>
+        </ul>
+        <ul class="hollys">
+          <li class="number">02</li>
+          <li class="website-type">Standard Website</li>
+          <li class="work">hollys 사이트</li>
+          <li>기여도</li>
+          <li>퍼블리싱 100%</li>
+          <li>사용프로그램</li>
+          <li>Photoshop,Illustrator,Visual Studio Code</li>
+          <li class="btn"><a href="#" target="_blank">view site</a></li>
+        </ul>
+      </div>
+      <div class="portfolio-3">
+        <ul class="jomalone">
+          <li class="number">03</li>
+          <li class="website-type">Standard Website</li>
+          <li class="work">jomalone 사이트</li>
+          <li>기여도</li>
+          <li>퍼블리싱 100%</li>
+          <li>사용프로그램</li>
+          <li>Photoshop,Illustrator,Visual Studio Code</li>
+          <li class="btn"><a href="#" target="_blank">작업중</a></li>
+        </ul>
+        <ul class="port_3_img">
+          <li><img src="./images/imac_jomalone.png" alt="hollys"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="section" id="contact">
+      <h1 class="text-center">CONTACT</h1>
+      <div class="info">
+        <ul>
+          <li>H:P : 010-5637-5066</li>
+          <li>E-mail : hyejun0816@naver.com</li>
+        </ul>
+        <ul class="kakaotalk">
+          <li><img src="./images/KakaoTalk.jpg" alt="kakaotalk"></li>
+          <li>저의 포트폴리오를 끝까지 봐주셔서 감사합니다 :)</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </body>
