@@ -390,6 +390,10 @@ header nav .burger div {
   width: 600px;
 }
 
+#fullpage #contact {
+  width: 100%;
+}
+
 #fullpage #contact footer {
   background-color: #000;
 }
@@ -525,7 +529,7 @@ header nav .burger div {
   body {
     overflow-x: hidden;
   }
-  header nav .nav-links {
+  body header nav .nav-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -537,7 +541,7 @@ header nav .burger div {
     right: 0;
     height: 92vh;
     top: 100%;
-    width: 80%;
+    width: 60%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -549,29 +553,29 @@ header nav .burger div {
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
-  header nav .nav-links > li > a {
+  body header nav .nav-links > li > a {
     color: #fff;
     font-size: 30px;
   }
-  header nav .burger {
+  body header nav .burger {
     display: block;
   }
-  header nav .nav-links.active {
+  body header nav .nav-links.active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
-  header #fullpage #home .well {
-    margin: 0 0 0 30px;
+  body #fullpage #home .well {
+    margin: 100px 0 0 30px;
     padding-bottom: 150px;
   }
-  header #fullpage #home .well p {
-    font-size: 9vw;
+  body #fullpage #home .well p {
+    font-size: 12vw;
     font-weight: 700;
   }
-  header #fullpage #home .well p:nth-child(2) {
-    margin-left: 20%;
+  body #fullpage #home .well p:nth-child(2) {
+    margin-left: 0;
   }
-  header #fullpage #home .well span {
+  body #fullpage #home .well span {
     display: none;
     width: 68vw;
     height: 4vh;
@@ -580,13 +584,13 @@ header nav .burger div {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  header #fullpage #about {
+  body #fullpage #about {
     width: 100%;
   }
-  header #fullpage #about h1 {
+  body #fullpage #about h1 {
     font-size: 8vw;
   }
-  header #fullpage #about .profiles {
+  body #fullpage #about .profiles {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -598,29 +602,342 @@ header nav .burger div {
         justify-content: space-around;
     margin-top: 100px;
   }
-  header #fullpage #about .profiles .profile-img li img {
+  body #fullpage #about .profiles .profile-img {
+    margin: 0 auto;
+  }
+  body #fullpage #about .profiles .profile-img li img {
     width: 400px;
     height: 400px;
   }
-  header #fullpage #about .profiles .profile-text {
+  body #fullpage #about .profiles .profile-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
   }
-  header #fullpage #about .profiles .profile-text li {
+  body #fullpage #about .profiles .profile-text li {
     margin: 30px;
     font-size: 30px;
   }
-  header #fullpage #about .profiles .profile-text li .line {
+  body #fullpage #about .profiles .profile-text li .line {
     display: block;
-    width: 1px;
-    height: 350px;
+    width: 376px;
+    height: 1px;
     background-color: #000;
   }
-  header #fullpage #about .profiles .profile-text li .tit {
+  body #fullpage #about .profiles .profile-text li .tit {
     display: block;
     font-weight: 500;
+  }
+  body #fullpage #skills {
+    width: 100%;
+    margin: 30px auto;
+  }
+  body #fullpage #skills h1 {
+    font-size: 8vw;
+    margin-bottom: 50px;
+  }
+  body #fullpage #skills .skills-container {
+    width: 70%;
+    margin: 0 18%;
+  }
+  body #fullpage #skills .skills-container .design {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  body #fullpage #skills .skills-container .design .skills-text {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+  }
+  body #fullpage #skills .skills-container .design .skills-img {
+    margin: 30px 0 30px 80px;
+  }
+  body #fullpage #skills .skills-container .design .skills-img img {
+    width: 150px;
+    height: 150px;
+  }
+  body #fullpage #skills .skills-container .html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0;
+  }
+  body #fullpage #skills .skills-container .html .skills-text {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+  }
+  body #fullpage #skills .skills-container .html .skills-img {
+    margin: 30px 0 0 80px;
+  }
+  body #fullpage #skills .skills-container .html .skills-img img {
+    width: 150px;
+    height: 150px;
+  }
+  body #fullpage #skills .skills-container .javascript {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #fullpage #skills .skills-container .javascript .skills-text {
+    width: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+  }
+  body #fullpage #skills .skills-container .javascript .skills-img {
+    margin: 30px 0 30px 80px;
+  }
+  body #fullpage #skills .skills-container .javascript .skills-img img {
+    width: 150px;
+    height: 150px;
+  }
+  body #fullpage #portfolio1 {
+    margin-top: 0;
+  }
+  body #fullpage #portfolio1 h1 {
+    font-size: 8vw;
+  }
+  body #fullpage #portfolio1 .portfolio1-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body #fullpage #portfolio1 .portfolio1-container .myportfolio {
+    margin: 0 auto;
+  }
+  body #fullpage #portfolio1 .portfolio1-container .myportfolio li {
+    font-size: 14px;
+  }
+  body #fullpage #portfolio1 .portfolio1-container .myportfolio li:nth-child(5) {
+    margin-bottom: 10px;
+  }
+  body #fullpage #portfolio1 .portfolio1-container .myportfolio .number {
+    color: #e9e8e8;
+    font-size: 100px;
+    font-weight: 900;
+  }
+  body #fullpage #portfolio1 .portfolio1-container .myportfolio .website-type {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+  }
+  body #fullpage #portfolio1 .portfolio1-container .myportfolio .work {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 32px;
+  }
+  body #fullpage #portfolio1 .portfolio1-container .myportfolio .btn a {
+    display: block;
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+  }
+  body #fullpage #portfolio1 .portfolio1-container .myportfolio .btn a:hover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #fff;
+    background-color: #000;
+  }
+  body #fullpage #portfolio1 .portfolio1-container .port_1_img li {
+    margin: 30px 0 0 20px;
+  }
+  body #fullpage #portfolio1 .portfolio1-container .port_1_img li img {
+    width: 400px;
+  }
+  body #fullpage #portfolio2 .portfolio2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .port_2_img li {
+    margin: 30px 0 0 20px;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .port_2_img li img {
+    width: 400px;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .hollys {
+    margin: 100px auto 0;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .hollys li {
+    font-size: 14px;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .hollys li:nth-child(5) {
+    margin-bottom: 10px;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .hollys .number {
+    color: #e9e8e8;
+    font-size: 100px;
+    font-weight: 900;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .hollys .website-type {
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .hollys .website-type {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .hollys .work {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 32px;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .hollys .btn a {
+    display: block;
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+  }
+  body #fullpage #portfolio2 .portfolio2-container .hollys .btn a:hover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #fff;
+    background-color: #000;
+  }
+  body #fullpage #portfolio3 {
+    width: 100%;
+  }
+  body #fullpage #portfolio3 .portfolio3-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body #fullpage #portfolio3 .portfolio3-container .jomalone {
+    margin: 100px auto 0;
+  }
+  body #fullpage #portfolio3 .portfolio3-container .jomalone li {
+    font-size: 14px;
+  }
+  body #fullpage #portfolio3 .portfolio3-container .jomalone li:nth-child(5) {
+    margin-bottom: 10px;
+  }
+  body #fullpage #portfolio3 .portfolio3-container .jomalone .number {
+    color: #e9e8e8;
+    font-size: 100px;
+    font-weight: 900;
+  }
+  body #fullpage #portfolio3 .portfolio3-container .jomalone .website-type {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+  }
+  body #fullpage #portfolio3 .portfolio3-container .jomalone .work {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 32px;
+  }
+  body #fullpage #portfolio3 .portfolio3-container .jomalone .btn a {
+    display: block;
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+  }
+  body #fullpage #portfolio3 .portfolio3-container .jomalone .btn a:hover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #fff;
+    background-color: #000;
+  }
+  body #fullpage #portfolio3 .portfolio3-container .port_3_img li {
+    margin: 30px 0 0 20px;
+  }
+  body #fullpage #portfolio3 .portfolio3-container .port_3_img li img {
+    width: 400px;
+  }
+  body #fullpage #contact {
+    width: 100%;
+  }
+  body #fullpage #contact footer {
+    background-color: #000;
+  }
+  body #fullpage #contact footer h1 {
+    margin-top: 100px;
+    color: #fff;
+    font-size: 50px;
+  }
+  body #fullpage #contact footer .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body #fullpage #contact footer .info > ul li {
+    color: #fff;
+    font-size: 30px;
+  }
+  body #fullpage #contact footer .info .kakaotalk li {
+    font-size: 16px;
+    margin-right: 30px;
+  }
+  body #fullpage #contact footer .info .kakaotalk li img {
+    width: 100px;
+    height: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
