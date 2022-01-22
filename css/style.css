@@ -1,15 +1,17 @@
-#fullpage > #home > nav {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
   width: 100%;
   min-height: 8vh;
   font-family: 'Poppins', sans-serif;
@@ -18,56 +20,60 @@
           box-shadow: 1px 1px 5px #ccc;
 }
 
-#fullpage > #home > nav > .logo h1 > img {
+header nav .logo {
+  margin-left: 30px;
+}
+
+header nav .logo h1 img {
   width: 70px;
   height: 40px;
   margin-top: 10px;
 }
 
-#fullpage > #home > nav > .nav-links {
+header nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 30%;
+  width: 70%;
 }
 
-#fullpage > #home > nav > .nav-links > li > a {
+header nav .nav-links li a {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 3px;
 }
 
-#fullpage > #home > nav > .burger {
+header nav .burger {
   display: none;
 }
 
-#fullpage > #home > nav > .burger > div {
+header nav .burger div {
   width: 25px;
   height: 3px;
   margin: 5px;
   background-color: #ccc;
 }
 
-#fullpage > #home > .well {
-  margin: 300px 0 0 30px;
+#fullpage #home .well {
+  margin: 0 0 0 30px;
   padding-bottom: 150px;
 }
 
-#fullpage > #home > .well > p {
+#fullpage #home .well p {
+  font-size: 8.3vw;
   font-weight: 700;
-  font-size: 130px;
 }
 
-#fullpage > #home > .well > p:nth-child(2) {
-  text-indent: 250px;
+#fullpage #home .well p:nth-child(2) {
+  margin-left: 20%;
 }
 
-#fullpage > #home > .well > span {
+#fullpage #home .well span {
   display: block;
-  width: 65vw;
+  width: 68vw;
   height: 4vh;
   margin: -50px 0 0 250px;
   background-color: #ffd736;
@@ -79,11 +85,11 @@
   width: 100%;
 }
 
-#fullpage #about > h1 {
-  font-size: 90px;
+#fullpage #about h1 {
+  font-size: 8vw;
 }
 
-#fullpage #about > .profiles {
+#fullpage #about .profiles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,302 +98,309 @@
   margin-top: 100px;
 }
 
-#fullpage #about > .profiles > .profile-img > li > img {
+#fullpage #about .profiles .profile-img li img {
   width: 400px;
   height: 400px;
 }
 
-#fullpage #about > .profiles > .profile-text {
+#fullpage #about .profiles .profile-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 80px;
 }
 
-#fullpage #about > .profiles > .profile-text > li {
+#fullpage #about .profiles .profile-text li {
   margin: 30px;
   font-size: 30px;
 }
 
-#fullpage #about > .profiles > .profile-text > li > .line {
+#fullpage #about .profiles .profile-text li .line {
   display: block;
   width: 1px;
   height: 350px;
   background-color: #000;
 }
 
-#fullpage #about > .profiles > .profile-text > li > .tit {
+#fullpage #about .profiles .profile-text li .tit {
   display: block;
   font-weight: 500;
 }
 
-#fullpage #about > .skills {
+#fullpage #skills {
   width: 100%;
-  margin: 200px auto;
+  margin: 30px auto;
 }
 
-#fullpage #about > .skills > h1 {
-  font-size: 90px;
+#fullpage #skills h1 {
+  font-size: 8vw;
+  margin-bottom: 50px;
 }
 
-#fullpage #about > .skills > .design {
+#fullpage #skills .skills-container {
+  width: 70%;
+  margin: 0 18%;
+}
+
+#fullpage #skills .skills-container .design {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 150px 0 0 125px;
+  margin: 0 auto;
 }
 
-#fullpage #about > .skills > .design > .skills-text {
+#fullpage #skills .skills-container .design .skills-text {
   width: 33%;
-  margin: 50px 50px 0 0;
-  font-size: 24px;
+  margin: 20px 50px 0 0;
+  font-size: 22px;
   line-height: 1.8;
   text-align: center;
 }
 
-#fullpage #about > .skills > .design > .skills-img > img {
-  width: 250px;
-  height: 250px;
+#fullpage #skills .skills-container .design .skills-img img {
+  width: 150px;
+  height: 150px;
 }
 
-#fullpage #about > .skills > .html {
+#fullpage #skills .skills-container .html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 100px 0 0 635px;
+  margin: 30px 0 0 38%;
 }
 
-#fullpage #about > .skills > .html > .skills-text {
-  margin-left: 30px;
+#fullpage #skills .skills-container .html .skills-text {
+  margin: 20px 0 0 30px;
+  font-size: 1.5vw;
+  line-height: 40px;
+  text-align: center;
+}
+
+#fullpage #skills .skills-container .html .skills-img img {
+  width: 150px;
+  height: 150px;
+}
+
+#fullpage #skills .skills-container .javascript {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 48% 0 0;
+}
+
+#fullpage #skills .skills-container .javascript .skills-text {
+  margin: 20px 50px 0 0;
   font-size: 22px;
   line-height: 40px;
   text-align: center;
 }
 
-#fullpage #about > .skills > .html > .skills-img > img {
-  width: 250px;
-  height: 250px;
+#fullpage #skills .skills-container .javascript .skills-img img {
+  width: 150px;
+  height: 150px;
 }
 
-#fullpage #about > .skills > .javascript {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 100px 0 0 70px;
+#fullpage #portfolio1 {
+  margin-top: 40px;
 }
 
-#fullpage #about > .skills > .javascript > .skills-text {
-  margin: 80px 50px 0 0;
-  font-size: 24px;
-  line-height: 40px;
-  text-align: center;
+#fullpage #portfolio1 h1 {
+  font-size: 8vw;
 }
 
-#fullpage #about > .skills > .javascript > .skills-img > img {
-  width: 250px;
-  height: 250px;
-}
-
-#fullpage > #portfolio > h1 {
-  font-size: 90px;
-}
-
-#fullpage > #portfolio > .portfolio-1 {
+#fullpage #portfolio1 .portfolio1-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 100px;
 }
 
-#fullpage > #portfolio > .portfolio-1 > .myportfolio > li {
-  font-size: 26px;
+#fullpage #portfolio1 .portfolio1-container .myportfolio li {
+  font-size: 18px;
 }
 
-#fullpage > #portfolio > .portfolio-1 > .myportfolio > li:nth-child(5) {
+#fullpage #portfolio1 .portfolio1-container .myportfolio li:nth-child(5) {
   margin-bottom: 20px;
 }
 
-#fullpage > #portfolio > .portfolio-1 > .myportfolio > .number {
+#fullpage #portfolio1 .portfolio1-container .myportfolio .number {
   color: #e9e8e8;
   font-size: 150px;
   font-weight: 900;
 }
 
-#fullpage > #portfolio > .portfolio-1 > .myportfolio > .website-type {
+#fullpage #portfolio1 .portfolio1-container .myportfolio .website-type {
   font-size: 45px;
   font-family: 'Poppins', sans-serif;
 }
 
-#fullpage > #portfolio > .portfolio-1 > .myportfolio > .work {
+#fullpage #portfolio1 .portfolio1-container .myportfolio .work {
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 34px;
 }
 
-#fullpage > #portfolio > .portfolio-1 > .myportfolio > .btn > a {
+#fullpage #portfolio1 .portfolio1-container .myportfolio .btn a {
   display: block;
   width: 150px;
-  height: 70px;
+  height: 50px;
   margin-top: 30px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  line-height: 65px;
+  line-height: 50px;
   text-align: center;
   border: 1px solid #000;
   border-radius: 50px;
 }
 
-#fullpage > #portfolio > .portfolio-1 > .myportfolio > .btn > a:hover {
+#fullpage #portfolio1 .portfolio1-container .myportfolio .btn a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #fff;
   background-color: #000;
 }
 
-#fullpage > #portfolio > .portfolio-1 > .port_1_img li {
-  margin-top: 100px;
+#fullpage #portfolio1 .portfolio1-container .port_1_img li {
+  margin-top: 70px;
 }
 
-#fullpage > #portfolio > .portfolio-1 > .port_1_img li > img {
+#fullpage #portfolio1 .portfolio1-container .port_1_img li img {
   width: 600px;
 }
 
-#fullpage > #portfolio > .portfolio-2 {
+#fullpage #portfolio2 .portfolio2-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 100px;
 }
 
-#fullpage > #portfolio > .portfolio-2 > .port_2_img li {
+#fullpage #portfolio2 .portfolio2-container .port_2_img li {
   margin-top: 50px;
 }
 
-#fullpage > #portfolio > .portfolio-2 > .port_2_img li > img {
+#fullpage #portfolio2 .portfolio2-container .port_2_img li img {
   width: 600px;
 }
 
-#fullpage > #portfolio > .portfolio-2 > .hollys > li {
-  font-size: 26px;
+#fullpage #portfolio2 .portfolio2-container .hollys li {
+  font-size: 18px;
 }
 
-#fullpage > #portfolio > .portfolio-2 > .hollys > li:nth-child(5) {
+#fullpage #portfolio2 .portfolio2-container .hollys li:nth-child(5) {
   margin-bottom: 20px;
 }
 
-#fullpage > #portfolio > .portfolio-2 > .hollys > .number {
+#fullpage #portfolio2 .portfolio2-container .hollys .number {
   color: #e9e8e8;
   font-size: 150px;
   font-weight: 900;
 }
 
-#fullpage > #portfolio > .portfolio-2 > .hollys > .website-type {
+#fullpage #portfolio2 .portfolio2-container .hollys .website-type {
   font-size: 45px;
   font-family: 'Poppins', sans-serif;
 }
 
-#fullpage > #portfolio > .portfolio-2 > .hollys > .work {
+#fullpage #portfolio2 .portfolio2-container .hollys .work {
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 34px;
 }
 
-#fullpage > #portfolio > .portfolio-2 > .hollys > .btn > a {
+#fullpage #portfolio2 .portfolio2-container .hollys .btn a {
   display: block;
   width: 150px;
-  height: 70px;
+  height: 50px;
   margin-top: 30px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  line-height: 65px;
+  line-height: 50px;
   text-align: center;
   border: 1px solid #000;
   border-radius: 50px;
 }
 
-#fullpage > #portfolio > .portfolio-2 > .hollys > .btn > a:hover {
+#fullpage #portfolio2 .portfolio2-container .hollys .btn a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #fff;
   background-color: #000;
 }
 
-#fullpage > #portfolio > .portfolio-3 {
+#fullpage #portfolio3 .portfolio3-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 100px;
 }
 
-#fullpage > #portfolio > .portfolio-3 > .jomalone > li {
-  font-size: 26px;
+#fullpage #portfolio3 .portfolio3-container .jomalone li {
+  font-size: 18px;
 }
 
-#fullpage > #portfolio > .portfolio-3 > .jomalone > li:nth-child(5) {
+#fullpage #portfolio3 .portfolio3-container .jomalone li:nth-child(5) {
   margin-bottom: 20px;
 }
 
-#fullpage > #portfolio > .portfolio-3 > .jomalone > .number {
+#fullpage #portfolio3 .portfolio3-container .jomalone > .number {
   color: #e9e8e8;
   font-size: 150px;
   font-weight: 900;
 }
 
-#fullpage > #portfolio > .portfolio-3 > .jomalone > .website-type {
+#fullpage #portfolio3 .portfolio3-container .jomalone .website-type {
   font-size: 45px;
   font-family: 'Poppins', sans-serif;
 }
 
-#fullpage > #portfolio > .portfolio-3 > .jomalone > .work {
+#fullpage #portfolio3 .portfolio3-container .jomalone .work {
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 34px;
 }
 
-#fullpage > #portfolio > .portfolio-3 > .jomalone > .btn > a {
+#fullpage #portfolio3 .portfolio3-container .jomalone .btn a {
   display: block;
   width: 150px;
-  height: 70px;
+  height: 50px;
   margin-top: 30px;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 50px;
   text-align: center;
   border: 1px solid #000;
   border-radius: 50px;
 }
 
-#fullpage > #portfolio > .portfolio-3 > .jomalone > .btn > a:hover {
+#fullpage #portfolio3 .portfolio3-container .jomalone .btn a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #fff;
   background-color: #000;
 }
 
-#fullpage > #portfolio > .portfolio-3 > .port_3_img li {
+#fullpage #portfolio3 .portfolio3-container .port_3_img li {
   margin-top: 100px;
 }
 
-#fullpage > #portfolio > .portfolio-3 > .port_3_img li > img {
+#fullpage #portfolio3 .portfolio3-container .port_3_img li > img {
   width: 600px;
 }
 
-#fullpage > #contact {
+#fullpage #contact footer {
   background-color: #000;
 }
 
-#fullpage > #contact h1 {
+#fullpage #contact footer h1 {
   margin-top: 100px;
   color: #fff;
   font-size: 50px;
 }
 
-#fullpage > #contact .info {
+#fullpage #contact footer .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,23 +409,23 @@
           justify-content: space-between;
 }
 
-#fullpage > #contact .info > ul li {
+#fullpage #contact footer .info > ul li {
   color: #fff;
   font-size: 30px;
 }
 
-#fullpage > #contact .info > .kakaotalk > li {
+#fullpage #contact footer .info .kakaotalk li {
   font-size: 16px;
   margin-right: 30px;
 }
 
-#fullpage > #contact .info > .kakaotalk > li > img {
+#fullpage #contact footer .info .kakaotalk li img {
   width: 100px;
   height: 100px;
 }
 
 @media screen and (max-width: 1024px) {
-  #fullpage > #home > nav {
+  header nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -425,44 +438,86 @@
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
   }
-  #fullpage > #home > nav > .logo {
+  header nav > .logo {
     letter-spacing: 5px;
     font-size: 20px;
   }
-  #fullpage > #home > nav > .nav-links {
+  header nav > .nav-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 50%;
+    width: 80%;
   }
-  #fullpage > #home > nav > .nav-links > li > a {
+  header nav > .nav-links > li > a {
     font-weight: 600;
     letter-spacing: 3px;
   }
-  #fullpage > #home > nav > .burger {
+  header nav .burger {
     display: none;
     cursor: pointer;
   }
-  #fullpage > #home > nav > .burger > div {
+  header nav .burger div {
     width: 25px;
     height: 3px;
     margin: 5px;
     background-color: #ccc;
   }
-  #fullpage > #home > .well {
+  #home .well {
     width: 100%;
   }
-  #fullpage > #home > .well > p {
+  #home .well p {
     font-size: 80px;
-    text-indent: 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  #fullpage > .home > .well {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+  }
+  header nav > .logo {
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+  header nav > .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 90%;
+  }
+  header nav > .nav-links > li > a {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  header nav .burger {
+    display: none;
+    cursor: pointer;
+  }
+  header nav .burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #ccc;
+  }
+  #fullpage #home .well {
     margin: 100px 0;
+  }
+  #fullpage #home .well p {
+    font-size: 80px;
   }
 }
 
@@ -470,7 +525,7 @@
   body {
     overflow-x: hidden;
   }
-  #fullpage > .home > nav > .nav-links {
+  header nav .nav-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -481,8 +536,8 @@
     position: absolute;
     right: 0;
     height: 92vh;
-    top: 62px;
-    width: 50%;
+    top: 100%;
+    width: 80%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -494,27 +549,78 @@
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
-  #fullpage > .home > nav > .nav-links > li > a {
+  header nav .nav-links > li > a {
     color: #fff;
     font-size: 30px;
   }
-  #fullpage > .home > nav > .burger {
+  header nav .burger {
     display: block;
   }
-  #fullpage > .home > nav > .burger > .toggle .line1 {
-    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-            transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  #fullpage > .home > nav > .burger > .toggle.line2 {
-    opacity: 0;
-  }
-  #fullpage > .home > nav > .burger > .toggle.line3 {
-    -webkit-transform: rotate(45deg) translate(-5px, -6px);
-            transform: rotate(45deg) translate(-5px, -6px);
-  }
-  #fullpage > .home > nav > .nav-links.active {
+  header nav .nav-links.active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+  }
+  header #fullpage #home .well {
+    margin: 0 0 0 30px;
+    padding-bottom: 150px;
+  }
+  header #fullpage #home .well p {
+    font-size: 9vw;
+    font-weight: 700;
+  }
+  header #fullpage #home .well p:nth-child(2) {
+    margin-left: 20%;
+  }
+  header #fullpage #home .well span {
+    display: none;
+    width: 68vw;
+    height: 4vh;
+    margin: -50px 0 0 120px;
+    background-color: #ffd736;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  header #fullpage #about {
+    width: 100%;
+  }
+  header #fullpage #about h1 {
+    font-size: 8vw;
+  }
+  header #fullpage #about .profiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 100px;
+  }
+  header #fullpage #about .profiles .profile-img li img {
+    width: 400px;
+    height: 400px;
+  }
+  header #fullpage #about .profiles .profile-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 80px;
+  }
+  header #fullpage #about .profiles .profile-text li {
+    margin: 30px;
+    font-size: 30px;
+  }
+  header #fullpage #about .profiles .profile-text li .line {
+    display: block;
+    width: 1px;
+    height: 350px;
+    background-color: #000;
+  }
+  header #fullpage #about .profiles .profile-text li .tit {
+    display: block;
+    font-weight: 500;
   }
 }
 /*# sourceMappingURL=style.css.map */
