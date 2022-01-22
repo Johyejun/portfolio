@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*헤더 메뉴*/
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,6 +59,15 @@ header nav .burger div {
   background-color: #ccc;
 }
 
+/*컨텐츠 시작*/
+#fullpage {
+  width: 100%;
+}
+
+#fullpage #home {
+  width: 100%;
+}
+
 #fullpage #home .well {
   margin: 0 0 0 30px;
   padding-bottom: 150px;
@@ -112,7 +123,7 @@ header nav .burger div {
 
 #fullpage #about .profiles .profile-text li {
   margin: 30px;
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 #fullpage #about .profiles .profile-text li .line {
@@ -468,14 +479,73 @@ header nav .burger div {
     margin: 5px;
     background-color: #ccc;
   }
-  #home .well {
+  #fullpage {
     width: 100%;
   }
-  #home .well p {
-    font-size: 80px;
+  #fullpage #home {
+    width: 100%;
+  }
+  #fullpage #home .well {
+    margin: 0 0 0 30px;
+    padding-bottom: 150px;
+  }
+  #fullpage #home .well p {
+    font-size: 8.3vw;
+    font-weight: 700;
+  }
+  #fullpage #home .well p:nth-child(2) {
+    margin-left: 20%;
+  }
+  #fullpage #home .well span {
+    display: block;
+    width: 68vw;
+    height: 4vh;
+    margin: -30px 0 0 20%;
+    background-color: #ffd736;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #fullpage #about {
+    width: 100%;
+  }
+  #fullpage #about h1 {
+    font-size: 8vw;
+  }
+  #fullpage #about .profiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 100px;
+  }
+  #fullpage #about .profiles .profile-img li img {
+    width: 250px;
+    height: 250px;
+  }
+  #fullpage #about .profiles .profile-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    width: 80%;
+  }
+  #fullpage #about .profiles .profile-text li {
+    margin: 30px;
+  }
+  #fullpage #about .profiles .profile-text li .line {
+    display: block;
+    width: 1px;
+    height: 350px;
+    background-color: #000;
+  }
+  #fullpage #about .profiles .profile-text li .tit {
+    display: block;
+    font-weight: 500;
   }
 }
 
+/*반응형 css*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header nav {
     display: -webkit-box;
