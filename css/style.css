@@ -64,10 +64,6 @@ header nav .burger div {
   width: 100%;
 }
 
-#fullpage #home {
-  width: 100%;
-}
-
 #fullpage #home .well {
   margin: 0 0 0 30px;
   padding-bottom: 150px;
@@ -90,10 +86,6 @@ header nav .burger div {
   background-color: #ffd736;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-#fullpage #about {
-  width: 100%;
 }
 
 #fullpage #about h1 {
@@ -149,66 +141,73 @@ header nav .burger div {
 }
 
 #fullpage #skills .skills-container {
-  width: 70%;
-  margin: 0 18%;
+  width: 100%;
 }
 
 #fullpage #skills .skills-container .design {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
   margin: 0 auto;
 }
 
 #fullpage #skills .skills-container .design .skills-text {
-  width: 33%;
-  margin: 20px 50px 0 0;
-  font-size: 22px;
-  line-height: 1.8;
-  text-align: center;
+  width: 100%;
+  margin: 20px 20px 0 0;
+  font-weight: 600;
+  font-size: 1.5vw;
 }
 
 #fullpage #skills .skills-container .design .skills-img img {
-  width: 150px;
-  height: 150px;
+  width: 60%;
 }
 
 #fullpage #skills .skills-container .html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 30px 0 0 38%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 25px auto;
 }
 
 #fullpage #skills .skills-container .html .skills-text {
-  margin: 20px 0 0 30px;
+  width: 100%;
+  margin: 20px 20px 0 0;
+  font-weight: 600;
   font-size: 1.5vw;
-  line-height: 40px;
-  text-align: center;
 }
 
 #fullpage #skills .skills-container .html .skills-img img {
-  width: 150px;
-  height: 150px;
+  width: 60%;
 }
 
 #fullpage #skills .skills-container .javascript {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 30px 48% 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #fullpage #skills .skills-container .javascript .skills-text {
-  margin: 20px 50px 0 0;
-  font-size: 22px;
-  line-height: 40px;
-  text-align: center;
+  width: 100%;
+  margin: 20px 20px 0 0;
+  font-weight: 600;
+  font-size: 1.5vw;
 }
 
 #fullpage #skills .skills-container .javascript .skills-img img {
-  width: 150px;
-  height: 150px;
+  width: 60%;
 }
 
 #fullpage #portfolio1 {
@@ -227,8 +226,12 @@ header nav .burger div {
       justify-content: space-around;
 }
 
+#fullpage #portfolio1 .portfolio1-container .myportfolio {
+  margin: 0 auto;
+}
+
 #fullpage #portfolio1 .portfolio1-container .myportfolio li {
-  font-size: 18px;
+  font-size: 1vw;
 }
 
 #fullpage #portfolio1 .portfolio1-container .myportfolio li:nth-child(5) {
@@ -237,19 +240,18 @@ header nav .burger div {
 
 #fullpage #portfolio1 .portfolio1-container .myportfolio .number {
   color: #e9e8e8;
-  font-size: 150px;
+  font-size: 12vw;
   font-weight: 900;
 }
 
 #fullpage #portfolio1 .portfolio1-container .myportfolio .website-type {
-  font-size: 45px;
+  font-size: 2vw;
   font-family: 'Poppins', sans-serif;
 }
 
 #fullpage #portfolio1 .portfolio1-container .myportfolio .work {
   margin-bottom: 20px;
-  font-weight: 400;
-  font-size: 34px;
+  font-size: 2vw;
 }
 
 #fullpage #portfolio1 .portfolio1-container .myportfolio .btn a {
@@ -277,7 +279,7 @@ header nav .burger div {
 }
 
 #fullpage #portfolio1 .portfolio1-container .port_1_img li img {
-  width: 600px;
+  width: 70%;
 }
 
 #fullpage #portfolio2 .portfolio2-container {
@@ -288,16 +290,24 @@ header nav .burger div {
       justify-content: space-around;
 }
 
+#fullpage #portfolio2 .portfolio2-container .port_2_img {
+  margin: 0 auto;
+}
+
 #fullpage #portfolio2 .portfolio2-container .port_2_img li {
   margin-top: 50px;
 }
 
 #fullpage #portfolio2 .portfolio2-container .port_2_img li img {
-  width: 600px;
+  width: 70%;
+}
+
+#fullpage #portfolio2 .portfolio2-container .hollys {
+  margin: 0 250px 0 0;
 }
 
 #fullpage #portfolio2 .portfolio2-container .hollys li {
-  font-size: 18px;
+  font-size: 1vw;
 }
 
 #fullpage #portfolio2 .portfolio2-container .hollys li:nth-child(5) {
@@ -306,19 +316,18 @@ header nav .burger div {
 
 #fullpage #portfolio2 .portfolio2-container .hollys .number {
   color: #e9e8e8;
-  font-size: 150px;
+  font-size: 12vw;
   font-weight: 900;
 }
 
 #fullpage #portfolio2 .portfolio2-container .hollys .website-type {
-  font-size: 45px;
+  font-size: 2vw;
   font-family: 'Poppins', sans-serif;
 }
 
 #fullpage #portfolio2 .portfolio2-container .hollys .work {
   margin-bottom: 20px;
-  font-weight: 400;
-  font-size: 34px;
+  font-size: 2vw;
 }
 
 #fullpage #portfolio2 .portfolio2-container .hollys .btn a {
@@ -349,29 +358,32 @@ header nav .burger div {
       justify-content: space-around;
 }
 
+#fullpage #portfolio3 .portfolio3-container .jomalone {
+  margin: 0 auto;
+}
+
 #fullpage #portfolio3 .portfolio3-container .jomalone li {
-  font-size: 18px;
+  font-size: 1vw;
 }
 
 #fullpage #portfolio3 .portfolio3-container .jomalone li:nth-child(5) {
   margin-bottom: 20px;
 }
 
-#fullpage #portfolio3 .portfolio3-container .jomalone > .number {
+#fullpage #portfolio3 .portfolio3-container .jomalone .number {
   color: #e9e8e8;
-  font-size: 150px;
+  font-size: 12vw;
   font-weight: 900;
 }
 
 #fullpage #portfolio3 .portfolio3-container .jomalone .website-type {
-  font-size: 45px;
+  font-size: 2vw;
   font-family: 'Poppins', sans-serif;
 }
 
 #fullpage #portfolio3 .portfolio3-container .jomalone .work {
   margin-bottom: 20px;
-  font-weight: 400;
-  font-size: 34px;
+  font-size: 2vw;
 }
 
 #fullpage #portfolio3 .portfolio3-container .jomalone .btn a {
@@ -398,7 +410,7 @@ header nav .burger div {
 }
 
 #fullpage #portfolio3 .portfolio3-container .port_3_img li > img {
-  width: 600px;
+  width: 70%;
 }
 
 #fullpage #contact {
@@ -439,6 +451,7 @@ header nav .burger div {
   height: 100px;
 }
 
+/*반응형 css*/
 @media screen and (max-width: 1024px) {
   header nav {
     display: -webkit-box;
@@ -545,7 +558,6 @@ header nav .burger div {
   }
 }
 
-/*반응형 css*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header nav {
     display: -webkit-box;
@@ -568,17 +580,32 @@ header nav .burger div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 100%;
+    width: 60%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #000;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
   header nav > .nav-links > li > a {
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 3px;
+    color: #fff;
+    font-size: 30px;
   }
   header nav .burger {
-    display: none;
+    display: block;
     cursor: pointer;
   }
   header nav .burger div {
@@ -586,6 +613,10 @@ header nav .burger div {
     height: 3px;
     margin: 5px;
     background-color: #ccc;
+  }
+  header nav .nav-links.active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   #fullpage #home .well {
     margin: 100px 0;
@@ -691,7 +722,7 @@ header nav .burger div {
   }
   body #fullpage #about .profiles .profile-text li {
     margin: 30px;
-    font-size: 30px;
+    font-size: 4.5vw;
   }
   body #fullpage #about .profiles .profile-text li .line {
     display: block;
@@ -728,12 +759,12 @@ header nav .burger div {
   body #fullpage #skills .skills-container .design .skills-text {
     width: 100%;
     margin: 0;
-    font-size: 20px;
+    font-size: 3.7vw;
     line-height: 1.8;
     text-align: center;
   }
   body #fullpage #skills .skills-container .design .skills-img {
-    margin: 30px 0 30px 80px;
+    margin: 0 auto;
   }
   body #fullpage #skills .skills-container .design .skills-img img {
     width: 150px;
@@ -744,20 +775,20 @@ header nav .burger div {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    margin: 0;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
   }
   body #fullpage #skills .skills-container .html .skills-text {
     width: 100%;
     margin: 0;
-    font-size: 20px;
+    font-size: 3.7vw;
     line-height: 40px;
     text-align: center;
   }
   body #fullpage #skills .skills-container .html .skills-img {
-    margin: 30px 0 0 80px;
+    margin: 30px auto 0;
   }
   body #fullpage #skills .skills-container .html .skills-img img {
     width: 150px;
@@ -775,12 +806,12 @@ header nav .burger div {
   }
   body #fullpage #skills .skills-container .javascript .skills-text {
     width: 100%;
-    font-size: 20px;
+    font-size: 3.7vw;
     line-height: 40px;
     text-align: center;
   }
   body #fullpage #skills .skills-container .javascript .skills-img {
-    margin: 30px 0 30px 80px;
+    margin: 30px auto 0;
   }
   body #fullpage #skills .skills-container .javascript .skills-img img {
     width: 150px;
@@ -846,10 +877,10 @@ header nav .burger div {
     background-color: #000;
   }
   body #fullpage #portfolio1 .portfolio1-container .port_1_img li {
-    margin: 30px 0 0 20px;
+    margin: 30px 0 0 70px;
   }
   body #fullpage #portfolio1 .portfolio1-container .port_1_img li img {
-    width: 400px;
+    width: 300px;
   }
   body #fullpage #portfolio2 .portfolio2-container {
     display: -webkit-box;
@@ -863,10 +894,10 @@ header nav .burger div {
         justify-content: space-around;
   }
   body #fullpage #portfolio2 .portfolio2-container .port_2_img li {
-    margin: 30px 0 0 20px;
+    margin: 30px 0 0 70px;
   }
   body #fullpage #portfolio2 .portfolio2-container .port_2_img li img {
-    width: 400px;
+    width: 300px;
   }
   body #fullpage #portfolio2 .portfolio2-container .hollys {
     margin: 100px auto 0;
@@ -969,10 +1000,10 @@ header nav .burger div {
     background-color: #000;
   }
   body #fullpage #portfolio3 .portfolio3-container .port_3_img li {
-    margin: 30px 0 0 20px;
+    margin: 30px 0 0 70px;
   }
   body #fullpage #portfolio3 .portfolio3-container .port_3_img li img {
-    width: 400px;
+    width: 300px;
   }
   body #fullpage #contact {
     width: 100%;

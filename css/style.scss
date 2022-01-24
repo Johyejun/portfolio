@@ -53,7 +53,6 @@ header {
 #fullpage {
   width: 100%;
   #home {
-    width: 100%;
     .well {
       margin: 0 0 0 30px;
       padding-bottom: 150px;
@@ -75,8 +74,6 @@ header {
     }
   }
   #about {
-    width: 100%;
-
     h1 {
       font-size: 8vw;
     }
@@ -120,55 +117,56 @@ header {
       margin-bottom: 50px;
     }
     .skills-container {
-      width: 70%;
-      margin: 0 18%;
+      width: 100%;
       .design {
         display: flex;
+        align-items: center;
+        width: 80%;
         margin: 0 auto;
         .skills-text {
-          width: 33%;
-          margin: 20px 50px 0 0;
-          font-size: 22px;
-          line-height: 1.8;
-          text-align: center;
+          width: 100%;
+          margin: 20px 20px 0 0;
+          font-weight: 600;
+          font-size: 1.5vw;
         }
         .skills-img {
           img {
-            width: 150px;
-            height: 150px;
+            width: 60%;
           }
         }
       }
       .html {
         display: flex;
-        margin: 30px 0 0 38%;
+        align-items: center;
+        width: 80%;
+        margin: 25px auto;
 
         .skills-text {
-          margin: 20px 0 0 30px;
+          width: 100%;
+          margin: 20px 20px 0 0;
+          font-weight: 600;
           font-size: 1.5vw;
-          line-height: 40px;
-          text-align: center;
         }
         .skills-img {
           img {
-            width: 150px;
-            height: 150px;
+            width: 60%;
           }
         }
       }
       .javascript {
         display: flex;
-        margin: 30px 48% 0 0;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
         .skills-text {
-          margin: 20px 50px 0 0;
-          font-size: 22px;
-          line-height: 40px;
-          text-align: center;
+          width: 100%;
+          margin: 20px 20px 0 0;
+          font-weight: 600;
+          font-size: 1.5vw;
         }
         .skills-img {
           img {
-            width: 150px;
-            height: 150px;
+            width: 60%;
           }
         }
       }
@@ -184,25 +182,25 @@ header {
       justify-content: space-around;
 
       .myportfolio {
+        margin: 0 auto;
         li {
-          font-size: 18px;
+          font-size: 1vw;
           &:nth-child(5) {
             margin-bottom: 20px;
           }
         }
         .number {
           color: rgb(233, 232, 232);
-          font-size: 150px;
+          font-size: 12vw;
           font-weight: 900;
         }
         .website-type {
-          font-size: 45px;
+          font-size: 2vw;
           font-family: 'Poppins', sans-serif;
         }
         .work {
           margin-bottom: 20px;
-          font-weight: 400;
-          font-size: 34px;
+          font-size: 2vw;
         }
         .btn {
           a {
@@ -228,7 +226,7 @@ header {
         li {
           margin-top: 70px;
           img {
-            width: 600px;
+            width: 70%;
           }
         }
       }
@@ -240,33 +238,34 @@ header {
       justify-content: space-around;
 
       .port_2_img {
+        margin: 0 auto;
         li {
           margin-top: 50px;
           img {
-            width: 600px;
+            width: 70%;
           }
         }
       }
       .hollys {
+        margin: 0 250px 0 0;
         li {
-          font-size: 18px;
+          font-size: 1vw;
           &:nth-child(5) {
             margin-bottom: 20px;
           }
         }
         .number {
           color: rgb(233, 232, 232);
-          font-size: 150px;
+          font-size: 12vw;
           font-weight: 900;
         }
         .website-type {
-          font-size: 45px;
+          font-size: 2vw;
           font-family: 'Poppins', sans-serif;
         }
         .work {
           margin-bottom: 20px;
-          font-weight: 400;
-          font-size: 34px;
+          font-size: 2vw;
         }
         .btn {
           a {
@@ -296,25 +295,25 @@ header {
       display: flex;
       justify-content: space-around;
       .jomalone {
+        margin: 0 auto;
         li {
-          font-size: 18px;
+          font-size: 1vw;
           &:nth-child(5) {
             margin-bottom: 20px;
           }
         }
-        > .number {
+        .number {
           color: rgb(233, 232, 232);
-          font-size: 150px;
+          font-size: 12vw;
           font-weight: 900;
         }
         .website-type {
-          font-size: 45px;
+          font-size: 2vw;
           font-family: 'Poppins', sans-serif;
         }
         .work {
           margin-bottom: 20px;
-          font-weight: 400;
-          font-size: 34px;
+          font-size: 2vw;
         }
         .btn {
           a {
@@ -339,7 +338,7 @@ header {
         li {
           margin-top: 100px;
           > img {
-            width: 600px;
+            width: 70%;
           }
         }
       }
@@ -378,6 +377,7 @@ header {
     }
   }
 }
+/*반응형 css*/
 @media screen and (max-width: 1024px) {
   header {
     nav {
@@ -479,7 +479,7 @@ header {
     }
   }
 }
-/*반응형 css*/
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header {
     nav {
@@ -495,18 +495,25 @@ header {
       }
       > .nav-links {
         display: flex;
-        justify-content: space-around;
-        width: 90%;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 100%;
+        width: 60%;
+        align-items: center;
+        background-color: #000;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
         > li {
           > a {
-            font-weight: 600;
-            font-size: 14px;
-            letter-spacing: 3px;
+            color: #fff;
+            font-size: 30px;
           }
         }
       }
       .burger {
-        display: none;
+        display: block;
         cursor: pointer;
         div {
           width: 25px;
@@ -514,6 +521,9 @@ header {
           margin: 5px;
           background-color: #ccc;
         }
+      }
+      .nav-links.active {
+        transform: translateX(0%);
       }
     }
   }
@@ -621,7 +631,7 @@ header {
             margin: 0 auto;
             li {
               margin: 30px;
-              font-size: 30px;
+              font-size: 4.5vw;
               .line {
                 display: block;
                 width: 376px;
@@ -653,12 +663,12 @@ header {
             .skills-text {
               width: 100%;
               margin: 0;
-              font-size: 20px;
+              font-size: 3.7vw;
               line-height: 1.8;
               text-align: center;
             }
             .skills-img {
-              margin: 30px 0 30px 80px;
+              margin: 0 auto;
               img {
                 width: 150px;
                 height: 150px;
@@ -667,18 +677,18 @@ header {
           }
           .html {
             display: flex;
-            flex-direction: column-reverse;
-            margin: 0;
+            flex-direction: column;
+            margin: 0 auto;
 
             .skills-text {
               width: 100%;
               margin: 0;
-              font-size: 20px;
+              font-size: 3.7vw;
               line-height: 40px;
               text-align: center;
             }
             .skills-img {
-              margin: 30px 0 0 80px;
+              margin: 30px auto 0;
               img {
                 width: 150px;
                 height: 150px;
@@ -692,12 +702,12 @@ header {
             //margin: 30px 48% 0 0;
             .skills-text {
               width: 100%;
-              font-size: 20px;
+              font-size: 3.7vw;
               line-height: 40px;
               text-align: center;
             }
             .skills-img {
-              margin: 30px 0 30px 80px;
+              margin: 30px auto 0;
               img {
                 width: 150px;
                 height: 150px;
@@ -761,9 +771,9 @@ header {
           }
           .port_1_img {
             li {
-              margin: 30px 0 0 20px;
+              margin: 30px 0 0 70px;
               img {
-                width: 400px;
+                width: 300px;
               }
             }
           }
@@ -777,9 +787,9 @@ header {
 
           .port_2_img {
             li {
-              margin: 30px 0 0 20px;
+              margin: 30px 0 0 70px;
               img {
-                width: 400px;
+                width: 300px;
               }
             }
           }
@@ -882,9 +892,9 @@ header {
           }
           .port_3_img {
             li {
-              margin: 30px 0 0 20px;
+              margin: 30px 0 0 70px;
               img {
-                width: 400px;
+                width: 300px;
               }
             }
           }
